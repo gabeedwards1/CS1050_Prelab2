@@ -1,0 +1,23 @@
+/*Print the following:
+• Print the values of A, B, C, and D.
+• Print the value of the sum of B and C.
+• Print the value of the product of A and D.
+• Print the value of the integer quotient of A divided by C.
+• Print the value of the integer remainder of C divided by D.
+• Print the value of the quantity A times C divided by (integer division) the quantity B plus D.*/
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C, D;
+    
+    printf("Enter 4 numbers separated by spaces: \n");
+    scanf("%d %d %d %d", &A, &B, &C, &D);
+
+    printf("The sum of B and C is: %d\n", B + C);
+    printf("The product of A and D is: %d\n", A * D);
+    printf("The integer quotient of A divided by C is: %d\n", A / C);
+    printf("The integer remained of C divided by D is: %d\n", C % D);
+    printf("The product of A and C divided by the quantity sum of B and D is: %d\n",
+        (A * C) / (B + D));
+}
